@@ -1,5 +1,6 @@
 import ListHeader from "./components/ListHeader";
 import { useEffect, useState } from 'react'
+import ListItem from "./components/ListItem";
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
   return (
     <div className="app">
       <ListHeader listName={"🏝️ Holiday tick list"} />
+      {sortedTasks?.map((task) => <ListItem key={task.id} task={task}/>)}
     </div>
   )
 }
