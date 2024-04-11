@@ -1,7 +1,9 @@
-const ListHeader = () => {
-  return (
-    <div>ListHeader</div>
-  )
+const ListHeader = ({ listName }) => {
+    return (
+        <div className="list-header">
+            <h1>{listName}</h1>
+        </div>
+    )
 }
 
 export default ListHeader
